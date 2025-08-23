@@ -12,8 +12,11 @@ import {
 import { toast } from "react-toastify";
 
 // Firebase config
+ const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBb1T8x0VdduiBFbjr8ZLcZwkEzAR_cPB4",
+  apiKey: API_KEY,
   authDomain: "netflix-clone-b72c8.firebaseapp.com",
   projectId: "netflix-clone-b72c8",
   storageBucket: "netflix-clone-b72c8.firebasestorage.app",
