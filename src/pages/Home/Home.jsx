@@ -39,6 +39,9 @@ const Home = () => {
       {showVideo && (
         <div className="video-overlay" onClick={() => setShowVideo(false)}>
           <div className="video-container" onClick={e => e.stopPropagation()}>
+            {/* Close Button */}
+            <button className="close-btn" onClick={() => setShowVideo(false)}>✖</button>
+
             <iframe
               src="https://www.youtube.com/embed/wUn05hdkhjM?autoplay=1"
               title="YouTube video player"
